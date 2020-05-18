@@ -16,7 +16,7 @@
     <param name="rgb_height" value="480"/>
     <param name="rgb_frame_rate" value="30"/>
     <param name="rgb_format" type="str" value="RGB8" />
-    <param name="rgb_exposure" type="double" value="100" />
+    <param name="rgb_exposure" type="double" value="1000" />
     <param name="ir_width" type="int" value="640" />
     <param name="ir_height" type="int" value="480" />
     <param name="ir_format" type="str" value="Y8" />

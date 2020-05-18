@@ -438,9 +438,9 @@ struct rs_rgbd_module_t {
       if (config_.enable_depth == true && config_.enable_emitter == false) {
         LOG_WARN("IR emitter is not enabled!");
       }
-      stereo_sensor_.set_option(RS2_OPTION_EMITTER_ENABLED, config_.enable_emitter);
-      stereo_sensor_.set_option(RS2_OPTION_GLOBAL_TIME_ENABLED, config_.global_time);
-      stereo_sensor_.set_option(RS2_OPTION_EXPOSURE, config_.ir_exposure);
+      //stereo_sensor_.set_option(RS2_OPTION_EMITTER_ENABLED, config_.enable_emitter);
+      //stereo_sensor_.set_option(RS2_OPTION_GLOBAL_TIME_ENABLED, config_.global_time);
+      //stereo_sensor_.set_option(RS2_OPTION_EXPOSURE, config_.ir_exposure);
     }
     // clang-format on
 
@@ -450,8 +450,8 @@ struct rs_rgbd_module_t {
       if (rs2_get_sensor(device_, "RGB Camera", rgb_sensor_) != 0) {
         FATAL("This RealSense device does not have a [Stereo Module]");
       }
-      rgb_sensor_.set_option(RS2_OPTION_GLOBAL_TIME_ENABLED, config_.global_time);
-      rgb_sensor_.set_option(RS2_OPTION_EXPOSURE, config_.rgb_exposure);
+      //rgb_sensor_.set_option(RS2_OPTION_GLOBAL_TIME_ENABLED, config_.global_time);
+      //rgb_sensor_.set_option(RS2_OPTION_EXPOSURE, config_.rgb_exposure);
     }
     // clang-format on
 
